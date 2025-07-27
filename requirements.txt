@@ -1,0 +1,19 @@
+# Core Framework
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+aiosqlite
+
+# Security & Auth
+passlib[bcrypt]
+python-jose[cryptography]
+
+# Schemas & Settings
+pydantic
+python-dotenv
+
+# Email & Timezone
+fastapi-mail
+pytz
