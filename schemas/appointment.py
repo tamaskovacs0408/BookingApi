@@ -38,4 +38,5 @@ class AppointmentOut(BaseModel):
     }
 
 class PublicAppointmentOut(BaseModel):
+    name: str
     start_time: datetime
