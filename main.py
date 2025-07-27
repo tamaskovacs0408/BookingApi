@@ -28,7 +28,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(user.router, prefix="/auth", tags=["Authentication"])
-app.include_router(appointment.router, tags=["Appointments"])
+app.include_router(appointment.router, prefix="/api", tags=["Appointments"])
 
 @app.get("/")
 async def read_root():
