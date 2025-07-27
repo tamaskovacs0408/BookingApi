@@ -22,7 +22,7 @@ engine = create_async_engine(
 )
 
 SessionLocal = async_sessionmaker(
-    autocommit=False, autoflush=False, bind=engine, class_=AsyncSession
+    autocommit=False, autoflush=False, bind=engine, class_=AsyncSession, expire_on_commit=False
 )
 
 class Base(DeclarativeBase):
